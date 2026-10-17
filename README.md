@@ -174,7 +174,6 @@ IvanderLab-Colab-Suite/
 **Andhika Ivander Nathanael (Nat / Ivander)**  
 * **Brand:** [IvanderLab](https://github.com/ivanderlab) (`@ivanderlab`)
 * **Role:** Creative Developer & DKV / Interactive Media Designer
-* **Location:** Sorong, Papua Barat Daya 🇮🇩
 * **Contact:** `contact.ivanderlab@gmail.com`
 * **Socials:** [GitHub](https://github.com/ivanderlab) • [Instagram](https://instagram.com/ivanderlab) • [LinkedIn](https://linkedin.com/in/ivanderlab) • [Behance](https://behance.net/ivanderlab)
 

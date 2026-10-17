@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 280" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pipeBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d1a" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="gpuGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#312e81" />
+    </linearGradient>
+    <marker id="arrowCyan" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M 0 0 L 8 4 L 0 8 z" fill="#38bdf8" />
+    </marker>
+    <marker id="arrowGreen" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M 0 0 L 8 4 L 0 8 z" fill="#10b981" />
+    </marker>
+  </defs>
+
+  <!-- Container -->
+  <rect width="1000" height="280" rx="14" fill="url(#pipeBg)" stroke="#1e293b" stroke-width="1.5" />
+
+  <!-- Title bar -->
+  <text x="32" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto" font-size="14" font-weight="700" fill="#38bdf8" letter-spacing="1">REALTIME AUDIO INFERENCE PIPELINE &amp; JITTER BUFFER FLOW</text>
+  <text x="830" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto" font-size="12" font-weight="600" fill="#10b981">LATENCY: ~67.7ms GPU</text>
+  <line x1="32" y1="52" x2="968" y2="52" stroke="#1e293b" stroke-width="1" />
+
+  <!-- Node 1: Client Mic -->
+  <g transform="translate(32, 75)">
+    <rect width="160" height="150" rx="10" fill="#131b2e" stroke="#334155" stroke-width="1.2" />
+    <circle cx="80" cy="42" r="18" fill="#1e293b" />
+    <text x="73" y="48" font-size="16">🎙️</text>
+    <text x="80" y="78" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto" font-size="13" font-weight="700" fill="#f8fafc">Client Microphone</text>
+    <text x="80" y="98" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto" font-size="11" fill="#94a3b8">Chunk: 170ms - 341ms</text>
+    <rect x="25" y="114" width="110" height="20" rx="6" fill="#0f172a" />
+    <text x="80" y="128" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto" font-size="10" font-weight="600" fill="#38bdf8">Input Gate: -55dB</text>
+  </g>
+
+  <!-- Arrow 1 to 2 -->
+  <line x1="192" y1="150" x2="238" y2="150" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4 3" marker-end="url(#arrowCyan)" />
+
+  <!-- Node 2: Cloudflare HTTP/2 -->
+  <g transform="translate(244, 75)">
+    <rect width="170" height="150" rx="10" fill="#131b2e" stroke="#0284c7" stroke-width="1.2" />
+    <circle cx="85" cy="42" r="18" fill="#0369a1" opacity="0.3" />
+    <text x="78" y="48" font-size="16">🌐</text>
+    <text x="85" y="78" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto" font-size="13" font-weight="700" fill="#f8fafc">Cloudflare HTTP/2</text>
+    <text x="85" y="98" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto" font-size="11" fill="#94a3b8">Multiplexed TCP Stream</text>
+    <rect x="25" y="114" width="120" height="20" rx="6" fill="#0c4a6e" />
+    <text x="85" y="128" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto" font-size="10" font-weight="600" fill="#38bdf8">0% UDP Packet Loss</text>
+  </g>
+
+  <!-- Arrow 2 to 3 -->
+  <line x1="414" y1="150" x2="460" y2="150" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4 3" marker-end="url(#arrowCyan)" />
+
+  <!-- Node 3: Colab GPU (Tesla T4) - Hero Node -->
+  <g transform="translate(466, 70)">
+    <rect width="210" height="160" rx="12" fill="url(#gpuGrad)" stroke="#6366f1" stroke-width="1.8" />
+    <rect x="55" y="12" width="100" height="20" rx="10" fill="#4338ca" />
+    <text x="105" y="26" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto" font-size="10" font-weight="800" fill="#c7d2fe">CUDA ENGINE</text>
+    <text x="105" y="58" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto" font-size="15" font-weight="800" fill="#ffffff">NVIDIA Tesla T4</text>
+    <text x="105" y="78" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto" font-size="12" fill="#a5b4fc">RVC v2 (768-dim) Inference</text>
+    <rect x="18" y="94" width="174" height="26" rx="6" fill="#1e1b4b" stroke="#4f46e5" stroke-width="1" />
+    <text x="105" y="111" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto" font-size="11" font-weight="700" fill="#34d399">⚡ Latency: 67.72 ms</text>
+    <text x="105" y="142" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto" font-size="10" fill="#cbd5e1">disableJit: 1 • rmvpe f0</text>
+  </g>
+
+  <!-- Arrow 3 to 4 -->
+  <line x1="676" y1="150" x2="720" y2="150" stroke="#10b981" stroke-width="2" marker-end="url(#arrowGreen)" />
+
+  <!-- Node 4: SOLA Jitter Buffer -->
+  <g transform="translate(726, 75)">
+    <rect width="115" height="150" rx="10" fill="#131b2e" stroke="#334155" stroke-width="1.2" />
+    <circle cx="57" cy="42" r="18" fill="#1e293b" />
+    <text x="50" y="48" font-size="16">🎛️</text>
+    <text x="57" y="78" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto" font-size="12" font-weight="700" fill="#f8fafc">SOLA Buffer</text>
+    <text x="57" y="98" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto" font-size="10" fill="#94a3b8">0.5s Crossfade</text>
+    <rect x="12" y="114" width="91" height="20" rx="6" fill="#0f172a" />
+    <text x="57" y="128" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto" font-size="9" font-weight="600" fill="#10b981">Anti-Stutter</text>
+  </g>
+
+  <!-- Arrow 4 to 5 -->
+  <line x1="841" y1="150" x2="876" y2="150" stroke="#10b981" stroke-width="2" marker-end="url(#arrowGreen)" />
+
+  <!-- Node 5: Speaker Output -->
+  <g transform="translate(882, 75)">
+    <rect width="86" height="150" rx="10" fill="#131b2e" stroke="#10b981" stroke-width="1.2" />
+    <circle cx="43" cy="42" r="18" fill="#064e3b" opacity="0.4" />
+    <text x="36" y="48" font-size="16">🔊</text>
+    <text x="43" y="78" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto" font-size="12" font-weight="700" fill="#f8fafc">Speaker</text>
+    <text x="43" y="98" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto" font-size="10" fill="#94a3b8">Discord / VRC</text>
+    <rect x="10" y="114" width="66" height="20" rx="6" fill="#064e3b" />
+    <text x="43" y="128" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto" font-size="9" font-weight="700" fill="#34d399">Online</text>
+  </g>
+</svg>

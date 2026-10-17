@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/hero_banner.svg" alt="IvanderLab Colab AI Suite Banner" width="100%">
+</p>
+
 # 🚀 IvanderLab Colab AI Suite
 ### High-Performance, Zero-Token Google Colab GPU Deployments for Generative AI
 
@@ -29,6 +33,10 @@ Click any **Open in Colab** badge to launch the environment immediately in your 
 
 > **File:** [`Ivan_Forge_Pony_Masterpiece.ipynb`](Ivan_Forge_Pony_Masterpiece.ipynb)  
 > **Key Capabilities:** AutismMix SDXL, 18 Curated Anime LoRAs with Visual Previews, ADetailer Facial Mesh, Danbooru TagComplete, Infinite Image Browser, Stealth Anti-Ban Launch System.
+
+<p align="center">
+  <img src="assets/vision_showcase.png" alt="SD-WebUI Forge Pony XL Masterpiece Showcase" width="100%">
+</p>
 
 ### Overview
 Stable Diffusion WebUI Forge is an optimized fork of AUTOMATIC1111 providing up to **2x faster generation and 50% less VRAM allocation**. This suite delivers an out-of-the-box anime and illustration environment tuned for **Pony Diffusion V6 XL** and **AutismMix SDXL**. It bypasses Colab's automated static code scanners through an encrypted repository unban layer.
@@ -79,6 +87,10 @@ A heavily patched deployment of **w-okada / tg-develop `MMVCServerSIO`** enginee
 | **Total End-to-End Latency** | `907.40 ms` | `907.00 ms` | `545.00 ms` | `1,371.00 ms` | Playable |
 
 > *Full raw dataset: [`benchmarks/performance_telemetry.csv`](benchmarks/performance_telemetry.csv).*
+
+<p align="center">
+  <img src="assets/audio_pipeline.svg" alt="Realtime Audio Latency & Pipeline Flow Architecture" width="100%">
+</p>
 
 ### Recommended WebUI Settings
 * **GPU ID:** `cuda:0 (Tesla T4)`
@@ -148,6 +160,10 @@ Runs **L3.1-8B-Stheno-v3.2**—one of the highest-rated open-weights narrative, 
 
 ```
 IvanderLab-Colab-Suite/
+├── assets/
+│   ├── hero_banner.svg                  # Modern vector hero header banner
+│   ├── vision_showcase.png              # 3-grid high-resolution vision showcase
+│   └── audio_pipeline.svg               # Vector architecture flowchart
 ├── Ivan_Forge_Pony_Masterpiece.ipynb    # SDXL & Pony V6 Stable Diffusion Forge Studio
 ├── Colab_RealtimeVoiceChanger.ipynb     # W-Okada Realtime Voice Changer (Patched RVC)
 ├── Colab_GPT_SoVITS_TTS.ipynb           # GPT-SoVITS Zero-Shot Emotional TTS

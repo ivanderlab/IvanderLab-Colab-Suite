@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080c16" />
+      <stop offset="50%" stop-color="#0d1527" />
+      <stop offset="100%" stop-color="#080c16" />
+    </linearGradient>
+    <radialGradient id="glowCyan" cx="15%" cy="25%" r="40%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.22" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="glowPurple" cx="85%" cy="20%" r="45%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="glowIndigo" cx="50%" cy="85%" r="50%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="40%" stop-color="#f1f5f9" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="360" rx="16" fill="url(#bgGrad)" />
+  <rect width="1200" height="360" rx="16" fill="url(#glowCyan)" />
+  <rect width="1200" height="360" rx="16" fill="url(#glowPurple)" />
+  <rect width="1200" height="360" rx="16" fill="url(#glowIndigo)" />
+
+  <!-- Subtle Blueprint Grid Pattern -->
+  <g opacity="0.04" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="60" x2="1200" y2="60" />
+    <line x1="0" y1="120" x2="1200" y2="120" />
+    <line x1="0" y1="180" x2="1200" y2="180" />
+    <line x1="0" y1="240" x2="1200" y2="240" />
+    <line x1="0" y1="300" x2="1200" y2="300" />
+    <line x1="120" y1="0" x2="120" y2="360" />
+    <line x1="240" y1="0" x2="240" y2="360" />
+    <line x1="360" y1="0" x2="360" y2="360" />
+    <line x1="480" y1="0" x2="480" y2="360" />
+    <line x1="600" y1="0" x2="600" y2="360" />
+    <line x1="720" y1="0" x2="720" y2="360" />
+    <line x1="840" y1="0" x2="840" y2="360" />
+    <line x1="960" y1="0" x2="960" y2="360" />
+    <line x1="1080" y1="0" x2="1080" y2="360" />
+  </g>
+
+  <!-- Outer Border -->
+  <rect x="1" y="1" width="1198" height="358" rx="15" fill="none" stroke="#1e293b" stroke-width="2" />
+
+  <!-- Top Pill -->
+  <g transform="translate(460, 36)">
+    <rect width="280" height="30" rx="15" fill="#141c2e" stroke="#334155" stroke-width="1" />
+    <circle cx="20" cy="15" r="4.5" fill="#10b981" />
+    <text x="34" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#93c5fd" letter-spacing="1.5">IVANDERLAB AI STUDIO</text>
+  </g>
+
+  <!-- Main Title -->
+  <text x="600" y="128" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="44" font-weight="800" fill="url(#titleGrad)" letter-spacing="-0.5">
+    IvanderLab Colab AI Suite
+  </text>
+
+  <!-- Subtitle -->
+  <text x="600" y="168" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="17" font-weight="400" fill="#94a3b8" letter-spacing="0.2">
+    Enterprise-Grade Generative AI Deployments Tuned for Google Colab Free Tier (Tesla T4)
+  </text>
+
+  <!-- 4 Primary Capability Chips -->
+  <g transform="translate(90, 206)">
+    <!-- Vision Card -->
+    <g transform="translate(0, 0)">
+      <rect width="235" height="54" rx="12" fill="#131b2e" stroke="#3b82f6" stroke-width="1.2" opacity="0.95" />
+      <circle cx="26" cy="27" r="12" fill="#1d4ed8" opacity="0.3" />
+      <text x="21" y="32" font-size="14">🎨</text>
+      <text x="48" y="25" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto" font-size="13" font-weight="700" fill="#f8fafc">SDXL &amp; Pony Forge</text>
+      <text x="48" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto" font-size="11" fill="#94a3b8">AutismMix • 18 LoRAs</text>
+    </g>
+
+    <!-- Realtime Voice Card -->
+    <g transform="translate(260, 0)">
+      <rect width="235" height="54" rx="12" fill="#131b2e" stroke="#06b6d4" stroke-width="1.2" opacity="0.95" />
+      <circle cx="26" cy="27" r="12" fill="#0891b2" opacity="0.3" />
+      <text x="21" y="32" font-size="14">🎙️</text>
+      <text x="48" y="25" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto" font-size="13" font-weight="700" fill="#f8fafc">Realtime Voice Changer</text>
+      <text x="48" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto" font-size="11" fill="#94a3b8">W-Okada • 67ms Latency</text>
+    </g>
+
+    <!-- Emotional TTS Card -->
+    <g transform="translate(520, 0)">
+      <rect width="235" height="54" rx="12" fill="#131b2e" stroke="#8b5cf6" stroke-width="1.2" opacity="0.95" />
+      <circle cx="26" cy="27" r="12" fill="#7c3aed" opacity="0.3" />
+      <text x="21" y="32" font-size="14">🗣️</text>
+      <text x="48" y="25" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto" font-size="13" font-weight="700" fill="#f8fafc">GPT-SoVITS TTS</text>
+      <text x="48" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto" font-size="11" fill="#94a3b8">Few-Shot Voice Cloning</text>
+    </g>
+
+    <!-- Narrative LLM Card -->
+    <g transform="translate(780, 0)">
+      <rect width="235" height="54" rx="12" fill="#131b2e" stroke="#ec4899" stroke-width="1.2" opacity="0.95" />
+      <circle cx="26" cy="27" r="12" fill="#db2777" opacity="0.3" />
+      <text x="21" y="32" font-size="14">🧠</text>
+      <text x="48" y="25" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto" font-size="13" font-weight="700" fill="#f8fafc">KoboldCpp Narrative</text>
+      <text x="48" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto" font-size="11" fill="#94a3b8">L3.1 Stheno 8B • 45+ t/s</text>
+    </g>
+  </g>
+
+  <!-- Bottom Hardware Specification Ribbon -->
+  <g transform="translate(0, 304)">
+    <line x1="90" y1="0" x2="1110" y2="0" stroke="#1e293b" stroke-width="1" />
+    <g transform="translate(600, 26)" text-anchor="middle">
+      <text font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#64748b" letter-spacing="0.5">
+        <tspan fill="#38bdf8">⚡ NVIDIA Tesla T4 (FP16 Native)</tspan>
+        <tspan fill="#475569">   •   </tspan>
+        <tspan fill="#a855f7">🌐 Zero-Token Cloudflare HTTP/2</tspan>
+        <tspan fill="#475569">   •   </tspan>
+        <tspan fill="#10b981">🛡️ Anti-Sleep Keep-Alive</tspan>
+        <tspan fill="#475569">   •   </tspan>
+        <tspan fill="#e2e8f0">🎯 100% Free Tier Compatible</tspan>
+      </text>
+    </g>
+  </g>
+</svg>

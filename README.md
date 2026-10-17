@@ -1,7 +1,7 @@
 # 🎙️ W-Okada Realtime Voice Changer — Google Colab GPU Suite
 ### High-Performance, Zero-Token Deployment with Native CUDA Acceleration & Architecture Patch
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/protofolioID/RVC-Realtime-Voice-Changer-Colab/blob/main/Colab_RealtimeVoiceChanger.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ivanderlab/RVC-Realtime-Voice-Changer-Colab/blob/main/Colab_RealtimeVoiceChanger.ipynb)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![CUDA](https://img.shields.io/badge/CUDA-12.1%20%7C%20Tesla%20T4-green.svg)](https://developer.nvidia.com/cuda-zone)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.3%2B-ee4c2c.svg)](https://pytorch.org/)
@@ -135,7 +135,7 @@ Click the badge above or navigate to [`Colab_RealtimeVoiceChanger.ipynb`](Colab_
 
 **Andhika Ivander Nathanael (Nat)**  
 * Web Technologies Specialist & DKV / Interactive Media Designer
-* GitHub: [@protofolioID](https://github.com/protofolioID)
+* GitHub: [@ivanderlab](https://github.com/ivanderlab)
 
 ---
 
